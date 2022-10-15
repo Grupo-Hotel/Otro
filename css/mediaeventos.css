@@ -1,0 +1,159 @@
+@media screen and (max-width: 600px) {
+    header .container  {
+        background-color: black;
+        opacity: 0.5;
+        width: 100vw;
+        height: auto;
+     
+    }
+
+  }
+
+
+  @media screen and (max-width: 600px) {
+    header  ul {
+        flex-direction: column ;
+        
+        width: 100vw;
+       height: 100%;      
+    }
+  }
+
+  @media screen and (min-width: 600px){
+    header .container  {
+        background-color: black;
+        opacity: 0.5;
+        width: 100vw;
+        height: auto;
+        
+  }  
+  }
+  @media screen and (min-width: 600px){
+    header ul{
+        flex-direction: column-reverse ;
+        width: 100vw;
+       height: 100%; 
+    }
+  }  
+  @media screen and (min-width: 768px){
+    header .container  {
+        background-color: black;
+        opacity: 0.5;
+        width: 100vw;
+        height: auto;
+        
+  }  
+  }
+  @media screen and (min-width: 768px){
+    header ul{
+        flex-direction: row ;
+        width: 100vw;
+       height: 100%; 
+    }
+  }
+
+
+@media screen and (max-width: 600px) {
+    main .text{
+     margin-top:200px;
+     padding:30px;
+
+    }
+  } 
+
+
+@media screen and (min-width: 600px){
+main .text{
+    margin-top:200px;
+    padding:30px;
+
+   }
+ } 
+@media screen and (min-width: 768px){
+main .text{
+    margin-top:90px;
+    padding:30px;
+
+   }
+ } 
+@media screen and (min-width: 992px){
+main .text{
+    margin-top:70px;
+    padding:30px;
+
+       }
+     } 
+
+@media screen and (max-width: 600px){
+      .item{
+      flex:100%;
+      }
+  }
+  
+@media screen and (min-width: 600px){
+      .item{
+      flex:50%;
+      }
+  }
+  
+@media screen and (min-width: 992px){
+      .item{
+      flex:25%;
+  
+      }
+  }
+
+@media screen and (max-width: 600px) {
+    main .videoevento{
+        flex-direction: column;
+        margin-bottom: 70px;
+        margin-top: 0px;
+       
+    }
+  } 
+
+
+@media screen and (max-width: 600px) {
+    .video iframe{
+        width: 100%;
+     
+    }
+  } 
+ 
+  
+@media screen and (min-width: 600px){
+  .video iframe{
+    width: 100%;
+
+  }
+}
+@media screen and (min-width: 768px){
+  .video iframe{
+    width: 100%;
+
+  }
+}
+@media screen and (min-width: 992px){
+  .video iframe{
+    width: 100%;
+
+  }
+}
+
+  @media  screen and (max-width: 600px) {
+    footer  {
+        background-color: black;
+        opacity: 0.5;
+        width: 100vw;
+  
+    }
+
+  }
+  @media  screen and (max-width: 600px) {
+    footer .container {
+        justify-content: flex-start; 
+        animation: none;
+       }
+
+  }
+  
