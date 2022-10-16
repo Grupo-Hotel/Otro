@@ -1,12 +1,18 @@
+*{
+    box-sizing: border-box;
+}
 body{       
     margin:0;
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background-color:darksalmon;
+    background-color: darksalmon;
+   
     font-family: "Trirong", serif;
-    
+    font-size: 18px;
+
 }
+       
 header{
     position: fixed;
     top: 0;
@@ -16,7 +22,6 @@ header{
     bottom: 0;
     display: flex;
     
-    transition: 1s;
 }
 header .container{
     display: flex;
@@ -55,81 +60,85 @@ header ul li a{
     align-items: center;
    
 }
+header a:hover{
+    text-decoration-line: underline;
+}
 
 main .container{
-   
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-top: 80px;
-    padding-top: 10px;
-    
-            
+   justify-content:  center;
+    display: flex;
+    margin-bottom:100px;
 }
-form { 
+    
+main .formulario { 
     background-image: url(https://depto51.cl/blog/wp-content/uploads/2014/04/Captura-de-pantalla-2014-04-07-a-las-15.30.53.png) ;
     background-size: 100% 100%;
     
-    width: 70%;
     text-align: center;
+    width:60%;
     color: white;
-    padding: 10px;
-    border-radius: 80px;
+    
+    font-weight: bolder;
+    border-radius: 50px;
     font-size: 20px;
+    padding:30px;
 }
 
-input{
-    color:grey;
+
+div input {
+    color:black;
+    border-color:darksalmon;
+    border-style: ridge;
+    border-radius: 7px;
     background-color: white;
-    width: 200px;
+    opacity:0.5;
+    font-weight: bolder;
+    
+    width: 70%;
     height: 30px;
     font-family: "Trirong", serif;
-    border-radius: 7px;
-    font-size: 18px;
+    float: inline-end;
+    font-size: 15px;
     
-
 }
-
-textarea{
+div button{
     
-    border-radius: 7px;
-    font-family: "Trirong", serif;
-}
-
-.sucursales{
-    margin: 50px 450px;
-    flex-wrap: nowrap;
-    text-align: center;
-   
-    display: flex;
-    flex-direction: row;
+    background-color: #f31a1a;
+    color: black;
+    transition: .3s;
+    padding: 20px;
     justify-content: center;
+
+    width: 90%;
+    height: 50px;
+    font-family: "Trirong", serif;
     
-    border-radius: 50px ;
-    align-items: center;
-    background-image: url(https://depto51.cl/blog/wp-content/uploads/2014/04/The-Grand-Budapest-Hotel-Poster-preview.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-bottom: 100px;
-    width: 30%;
-    color:white; 
-    padding:20px;
+    font-size: 15px;
+    font-weight: bolder;
+
+    text-align: center;
+    border-radius: 10px;
+
 }
-.item iframe{
-    border-radius: 20px;
-    width: 300px;
-    height:225px;
-    margin-bottom: 30px;
-    
-    
+
+textarea{    
+    border-radius: 7px;
+    width: 70%;
+    height: 150px;
+    font-family: "Trirong", serif;
+    font-size: 15px;
+    color:black;
+    border-color:darksalmon;
+    border-style: ridge;
+    font-weight: bolder;
+    border-radius: 7px;
+    background-color: white;
+    opacity:0.5;
+    float: inline-end;    
 }
-p, a{
-    font-size: 20px;
-    color:white;
-}
+
 footer {
-    
+    position:center;
     margin:0px;
     position: fixed;
     align-items: center;
@@ -138,23 +147,17 @@ footer {
     height: 70px;
     flex-direction: column;
     background-color: black;
-    opacity: 0.5;
-    
-    
+    opacity: 0.5; 
     
 }
 
 footer .container{
     
     display: flex;
-    margin:0;   
-    
-   
-      
+    margin:0;    
     position: fixed;
     width: 100%; 
     height: 50px;
-   
     border:1px solid;
     flex-direction: row; 
     padding:1px;   
@@ -167,7 +170,6 @@ footer .box {
     justify-content: center;
     
 }
-
 
 footer ul{
     position: relative;

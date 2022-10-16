@@ -7,10 +7,12 @@ body{
     height: 100vh;
     width: 100vw;
     background-color: darksalmon;
-    
+   
     font-family: "Trirong", serif;
-}
+    font-size: 18px;
 
+}
+   
 
 header{
     position: fixed;
@@ -21,7 +23,6 @@ header{
     bottom: 0;
     display: flex;
     
-    transition: 1s;
 }
 header .container{
     display: flex;
@@ -33,8 +34,8 @@ header .container{
     opacity: 0.5;
     position:fixed;
     justify-content: center;
+    margin: center;
 }
- 
 
 header ul{
     position: relative;
@@ -56,9 +57,14 @@ header ul li a{
     font-size:20px;
     font-weight: bold;
     text-decoration: none;
-    
+    border-radius: 4px;
     align-items: center;
+   
 }
+header a:hover{
+    text-decoration-line: underline;
+}
+
 main .text{
     display: flex;
     flex-direction: column;
@@ -68,33 +74,46 @@ main .text{
     text-align: center;
     margin-top: 70px;
     letter-spacing: 1px;
-    
-    margin-bottom: 70px;    
+       
 }
 
 
-.container{
+main .container{
     display: flex;
-    padding:5px;
+    padding:15px;
+    margin-left:50px;
+    margin-right: 50px;
     
     flex-wrap: wrap;
 }
 .item{
     flex:25%;
     padding:5px;
+    
 }
 .item img{
+    
     margin-top: 5px;
 }
 img{
     width:100%;
     border-radius: 10px;
-    
+   
+
 }
 
-.video iframe{
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.5); 
+}
+
+iframe{
     border-radius: 40px;
     padding: 10px;
+    
 }
 
 main .videoevento{
@@ -106,14 +125,11 @@ main .videoevento{
     column-gap: 60px;
     margin-bottom: 70px;
 }
-
 footer {
     
     margin:0px;
     position: fixed;
     align-items: center;
-    justify-content: center;
-    justify-items: center;
     bottom: 0;
     width:100%;
     height: 70px;
@@ -121,30 +137,33 @@ footer {
     background-color: black;
     opacity: 0.5;
     
+    
+    
 }
 
 footer .container{
     
     display: flex;
     margin:0;   
-    align-items:center;
-    justify-content: center;
+    
+   
+      
     position: fixed;
     width: 100%; 
     height: 50px;
    
     border:1px solid;
     flex-direction: row; 
-    padding:10px;   
+    padding:1px;   
 }
 footer .box {
-    width: 30px;
+    width: 100%;
     height: 70x;
     display: flex;
-   
+    margin:20px;
     justify-content: center;
+    
 }
-
 
 footer ul{
     position: relative;
@@ -156,18 +175,9 @@ footer ul li {
     position: relative;
     list-style: none;
     justify-content: center;
-    
+    list-style: none;
     
 }
-
-footer p{
-    letter-spacing: 2px;
-    font-size:20px;
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(233, 235, 124);
-}
-
 
 footer ul li a{
     position: relative;

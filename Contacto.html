@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACTO</title>
-    
-    
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d1be60c6dc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    
+   
     <link rel="stylesheet" href="css/Contacto.css">
-    <link rel="stylesheet" href="css/media header footer.css">
+    <link rel="stylesheet" href="css/mediacontacto.css">
+    
     <link rel="icon" href="image/buda.ico">
 
 </head>
@@ -34,33 +34,38 @@
     </header>
 
     <main>
-        <div class="container"> 
-            <form action= "D:\Escritorio\CODO A CODO\BUDAPEST HOTEL\TP Budapest HOTEL/show_data.html">
-                <div clas="campos"> <h2>Contacto</h2>
-                    <label for="name">Nombre</label> <input type="text" name="name" placeholder="..." size="20" maxlength="100">
-                    <label for="lastname">Apellido</label> <input type="text" name="lastname" placeholder="..." size="20" maxlength="100"><br><br>
-                    <label for="birthdate">Fecha de Nacimiento</label> <input type="date" name="bithdate" placeholder="...">
-                    <p>Género
-                    <input type="radio" name="gender" value="hombre">Hombre
-                    <input type="radio" name="gender" value="hombre">Mujer
-                    <input type="radio" name="gender" value="hombre">Otro
-                    <br><br>
-                    <label for="address">Dirección</label> <input type="text" name="address" placeholder="..." size="17" maxlength="100">
-                    <label for="zipcode">Código Postal</label> <input type="text" name="zipcode" placeholder="..." size="16" maxlength="100"><br><br>
-                    <label for="city">Ciudad</label> <input type="text" name="city" placeholder="..."size="56" maxlength="100"><br><br>
-                    <label for="Comentario">Comentario</label>
-                    <textarea name="comentario" rows="7" cols="59"></textarea><br><br>
-                    <input type="submit" name="Enviar">
-                    <input type="reset" name="borrar todo">
-                </div>
-            </form>
-        </div>
+        <div class="container">
+            <div class="formulario">
+                <form action="https://formspree.io/f/xjvzoqlz" method="post">
+                    <h2>Contacto</h2>
+                        <div><label for="name">Nombre</label>
+                        <input type="text" name="name" placeholder="..." id="userName"></div>
 
-        <div class="sucursales">
-            <div class="item"><h1>Sucursal</h1>
-                <p>Centro de La Plata: <a href="https://www.google.com.ar/maps/place/Av.+44+%26+C.+8,+La+Plata,+Provincia+de+Buenos+Aires/@-34.9116381,-57.9585949,17z/data=!3m1!4b1!4m5!3m4!1s0x95a2e635e383cca5:0xb0711f87988cc42c!8m2!3d-34.9116425!4d-57.9564062"> Avenida 44 y esquina 8</a></p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.793055924124!2d-57.9564062!3d-34.9116425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e635e383cca5%3A0xb0711f87988cc42c!2sAv.%2044%20%26%20C.%208%2C%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661891261629!5m2!1ses-419!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                        <div><label for="lastname">Apellido</label>
+                        <input type="text" name="lastname" placeholder="..." id="userLastName"></div>
+
+                        <div><label for="email">Email</label>
+                        <input type="text" name="email" placeholder="..." id="userEmail"></div>
+
+                        <div><label for="country">País</label>
+                        <input type="text" name="country" placeholder="..." id="userCountry"></div>
+                            
+                        <div><label for="city">Ciudad</label>
+                        <input type="text" name="city" placeholder="..." id="userCity"></div>
+                        
+                        <div><label for="address">Dirección</label>
+                        <input type="text" name="address" placeholder="..." id="userAddress"></div>
+                        
+                        <div><label for="Comentario">Comentario</label>
+                        <textarea name="comentario"  placeholder="..." id="textArea"></textarea></div>
+                        
+                        <div><button type="submit">Enviar</button></div>
+                    
+                </form>
+            </div>
         </div>
+     
+
     </main>
 
     <footer>
@@ -76,5 +81,6 @@
             </div>
         </div>
     </footer> 
+    <script src="/home/teresa/Escritorio/elizabeth.js"></script>
 </body>
 </html>

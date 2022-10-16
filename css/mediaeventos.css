@@ -57,6 +57,7 @@
     main .text{
      margin-top:200px;
      padding:30px;
+     font-size: 15px;
 
     }
   } 
@@ -114,7 +115,7 @@ main .text{
 
 
 @media screen and (max-width: 600px) {
-    .video iframe{
+    .zoom iframe{
         width: 100%;
      
     }
@@ -122,38 +123,20 @@ main .text{
  
   
 @media screen and (min-width: 600px){
-  .video iframe{
+  .zoom iframe{
     width: 100%;
 
   }
 }
 @media screen and (min-width: 768px){
-  .video iframe{
+  .zoom iframe{
     width: 100%;
 
   }
 }
 @media screen and (min-width: 992px){
-  .video iframe{
+  .zoom iframe{
     width: 100%;
 
   }
 }
-
-  @media  screen and (max-width: 600px) {
-    footer  {
-        background-color: black;
-        opacity: 0.5;
-        width: 100vw;
-  
-    }
-
-  }
-  @media  screen and (max-width: 600px) {
-    footer .container {
-        justify-content: flex-start; 
-        animation: none;
-       }
-
-  }
-  
