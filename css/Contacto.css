@@ -9,19 +9,18 @@ body{
     background-color: darksalmon;
    
     font-family: "Trirong", serif;
-    font-size: 18px;
+   
 
 }
-       
+   
 header{
-    position: fixed;
+   
     top: 0;
     left: 0;
     width: 100%;
     height: 70px;
     bottom: 0;
     display: flex;
-    
 }
 header .container{
     display: flex;
@@ -31,7 +30,7 @@ header .container{
     align-items:center;
     background-color: black;
     opacity: 0.5;
-    position:fixed;
+    position: relative;
     justify-content: center;
     margin: center;
 }
@@ -61,84 +60,84 @@ header ul li a{
    
 }
 header a:hover{
-    text-decoration-line: underline;
+    
+    color:darksalmon;
+    border-bottom: 3px solid;
+    
+}
+
+header .container li ul {
+    display:none;
+    position:absolute;
+
+    }
+.container li ul li {
+    margin-top:10px;
+    color:white;
+    width: 25%;
+    
+    padding: 0px;
+}
+.container li ul li a{
+    font-size: 15px;
+    margin-left:-40px;
+    background-color: black;
+    height: 40px;
+    
+
+}
+.container li:hover > ul {
+    display:block;
+    position:fixed;
+ 
 }
 
 main .container{
-   justify-content:  center;
     display: flex;
-    margin-bottom:100px;
-}
-    
-main .formulario { 
-    background-image: url(https://depto51.cl/blog/wp-content/uploads/2014/04/Captura-de-pantalla-2014-04-07-a-las-15.30.53.png) ;
-    background-size: 100% 100%;
-    
-    text-align: center;
-    width:60%;
-    color: white;
-    
-    font-weight: bolder;
-    border-radius: 50px;
-    font-size: 20px;
-    padding:30px;
-}
-
-
-div input {
-    color:black;
-    border-color:darksalmon;
-    border-style: ridge;
-    border-radius: 7px;
-    background-color: white;
-    opacity:0.5;
-    font-weight: bolder;
-    
-    width: 70%;
-    height: 30px;
-    font-family: "Trirong", serif;
-    float: inline-end;
-    font-size: 15px;
-    
-}
-div button{
-    
-    background-color: #f31a1a;
-    color: black;
-    transition: .3s;
-    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-
-    width: 90%;
-    height: 50px;
+    color:white;
+     margin-top: 100px;
     font-family: "Trirong", serif;
+    column-gap: 50px;
     
-    font-size: 15px;
-    font-weight: bolder;
-
-    text-align: center;
-    border-radius: 10px;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 1px;
 
 }
+.item h1{
+    text-align: center;
+}
 
-textarea{    
-    border-radius: 7px;
-    width: 70%;
-    height: 150px;
-    font-family: "Trirong", serif;
-    font-size: 15px;
-    color:black;
-    border-color:darksalmon;
-    border-style: ridge;
-    font-weight: bolder;
-    border-radius: 7px;
-    background-color: white;
-    opacity:0.5;
-    float: inline-end;    
+main .item{  
+    width:50%;
+    column-gap: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom:50px;
+}
+img{
+    width: 100%;
+    border-radius: 50px;
+    
+}
+
+.item :hover {
+    filter: opacity(.5);
+}
+
+hr {
+    
+    color: white;
+    line-height: 20px;
+    border-style: solid;
+    
 }
 
 footer {
-    position:center;
     margin:0px;
     position: fixed;
     align-items: center;
@@ -147,29 +146,23 @@ footer {
     height: 70px;
     flex-direction: column;
     background-color: black;
-    opacity: 0.5; 
-    
+    opacity: 0.5;
 }
 
 footer .container{
     
     display: flex;
-    margin:0;    
+    margin:0;   
+    
     position: fixed;
     width: 100%; 
     height: 50px;
+    justify-content: center;
     border:1px solid;
     flex-direction: row; 
     padding:1px;   
 }
-footer .box {
-    width: 100%;
-    height: 70x;
-    display: flex;
-    margin:20px;
-    justify-content: center;
-    
-}
+
 
 footer ul{
     position: relative;
@@ -179,7 +172,7 @@ footer ul{
 }
 footer ul li {
     position: relative;
-    list-style: none;
+    align-items: center;
     justify-content: center;
     list-style: none;
     
@@ -198,8 +191,12 @@ footer ul li a{
     animation: subir ease 4s;
    
 }
-
-@keyframes subir{
+footer a:hover{
+    
+    color:darksalmon;
+    
+    
+}@keyframes subir{
     0%   {opacity: 0.0;top:-200px; bottom:100px;}
     50%  {opacity: 1.0; top:0px; bottom:0px;}
     
