@@ -16,7 +16,7 @@ body{
 }
 
 header{
-    position: fixed;
+    
     top: 0;
     left: 0;
     width: 100%;
@@ -25,7 +25,7 @@ header{
     display: flex;
     
 }
-header .container{
+header .container {
     display: flex;
     flex-direction:row;
     width:100%;
@@ -33,11 +33,11 @@ header .container{
     align-items:center;
     background-color: black;
     opacity: 0.5;
-    position:fixed;
+    position: relative;
     justify-content: center;
-    margin: center;
+    
 }
-header ul{
+ul{
     position: relative;
     display: flex;
     align-items: center;
@@ -49,7 +49,7 @@ header ul li {
     list-style: none;
 }
 
-header ul li a{
+header  ul li a{
     position: relative;
     margin: 0 15px;
     color: white;
@@ -61,23 +61,39 @@ header ul li a{
     align-items: center;
    
 }
-header a:hover{
-    text-decoration-line: underline;
-}
-main{
-      
-    align-items: center;
+header  a:hover{
+    color:darksalmon;
+    border-bottom: 3px solid;
     
-    width:100%;
-    height: 300px; 
-
 }
 
-main .container{
-    display:flex;
-    justify-content: center;
-    margin-top: 70px;
+header .container li ul {
+    display:none;
+    position:absolute;
+
+    }
+.container li ul li {
+    margin-top:10px;
+    color:white;
+    width: 25%;
+    
+    padding: 0px;
 }
+
+.container li ul li a{
+    font-size: 15px;
+    margin-left:-40px;
+    background-color: black;
+    height: 40px;
+    
+
+}
+.container li:hover > ul {
+    display:block;
+    position:fixed;
+ 
+}
+
 footer {
     
     margin:0px;
@@ -98,9 +114,7 @@ footer .container{
     
     display: flex;
     margin:0;   
-    
-   
-      
+    justify-content: center;
     position: fixed;
     width: 100%; 
     height: 50px;
@@ -109,14 +123,7 @@ footer .container{
     flex-direction: row; 
     padding:1px;   
 }
-footer .box {
-    width: 100%;
-    height: 70x;
-    display: flex;
-    margin:20px;
-    justify-content: center;
-    
-}
+
 
 footer ul{
     position: relative;
@@ -144,6 +151,13 @@ footer ul li a{
     font-family: "Trirong", serif;
     animation: subir ease 4s;
    
+}
+
+footer a:hover{
+    
+    color:darksalmon;
+    
+    
 }
 
 @keyframes subir{
